@@ -1,0 +1,90 @@
+# ============================================================
+# AgentOrchestra - .gitignore
+# ============================================================
+
+
+# ── Python ──────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+
+# ── Virtual Environment ──────────────────────────────────────
+env/
+venv/
+ENV/
+.venv/
+.env.local
+
+
+# ── الأسرار والإعدادات الحساسة ──────────────────────────────
+.env
+.env.encrypted
+*.key
+secrets/
+
+
+# ── السجلات ──────────────────────────────────────────────────
+logs/*.log
+logs/archive/
+logs/**/*.log
+
+
+# ── قواعد البيانات ───────────────────────────────────────────
+*.db
+*.sqlite
+*.sqlite3
+memory/*.db
+memory/projects/*/project_memory.db
+
+
+# ── ملفات IDE ────────────────────────────────────────────────
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+
+# ── الاختبارات والتغطية ──────────────────────────────────────
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.nox/
+
+
+# ── النسخ الاحتياطية ─────────────────────────────────────────
+backups/git_snapshots/
+backups/db_backups/
+
+
+# ── ملفات مؤقتة ──────────────────────────────────────────────
+*.tmp
+*.temp
+tmp/
+temp/
+
+
+# ── Playwright ───────────────────────────────────────────────
+test-results/
+playwright-report/
